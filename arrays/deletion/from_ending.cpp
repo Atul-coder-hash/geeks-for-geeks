@@ -12,3 +12,17 @@ int main()
 
     }
 }
+
+// custom function
+
+int main()
+{
+    vector<int> v = {10,20,30,40};
+   
+    for(int i=0;i<v.size()-1;i++)
+    {
+        cout<<v[i]<<" ";
+
+    }
+}
+
