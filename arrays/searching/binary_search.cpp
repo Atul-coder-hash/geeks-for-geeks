@@ -1,13 +1,40 @@
-// Input: arr[] = [10, 20, 30, 40, 50]
-// Output: "10 20 30 40 50 "
-// Explanation: Just traverse and print the numbers.
+#include<bits/stdc++.h>
+using namespace std;
 
-// Input: arr[] = [7, 8, 9, 1, 2]
-// Output: "7 8 9 1 2 "
-// Explanation: Just traverse and print the numbers.
+int binary_search(vector<int> v, int x){
 
-// Input: arr[] = [100, 200, 300, 400, 500]
-// Output: "100 200 300 400 500 "
-// Explanation: Just traverse and print the numbers.
+    int low =0,high = v.size()-1;
 
+    while(low <= high)
+    {
+        int mid = low + (high-low)/2;
 
+        if(v[mid]==x)
+        {
+            return mid;
+        }
+
+        if(v[mid] < x) // mid == element
+        {
+            low = mid+1;
+        }
+        else
+    
+            high = mid-1;
+        }
+
+    return -1;
+  
+}
+
+int main()
+{
+    vector<int> arr = {2,5,8,12,16,23,38,56,72,92 };
+       int x = 8;
+       int result = binary_search(arr,x);
+       if(result == -1) cout << "Element is not present in array";
+    else cout << "Element is present at index " << result;
+
+    
+
+}
