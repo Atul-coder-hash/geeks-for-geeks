@@ -6,12 +6,12 @@
         vector<int> temp(n,0); // give asize of arrray equal to original array and fill zero value in array
 
         
-        int j=0;
+        int j=0;// to keep track of the index in temp[]
         for(int i=0;i<n;i++)
         {
             if(arr[i]!=0) // elements is not equal to zero then add element in temporary array
             {
-                temp[j++]=arr[i];
+                temp[j++]=arr[i]; // Copy non-zero elements to temp[]
                 
             }
             else{

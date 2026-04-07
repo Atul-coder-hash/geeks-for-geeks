@@ -17,7 +17,8 @@ void two_traversals(vector<int> arr)
         }
        
     }
-
+      // Now all non-zero elements have been shifted to
+    // the front. Make all elements 0 from count to end.
      while (count < arr.size())
         arr[count++] = 0;
 
