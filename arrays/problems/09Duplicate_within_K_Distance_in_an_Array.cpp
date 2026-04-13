@@ -24,7 +24,7 @@ bool checkDuplicatesWithinK(vector<int> arr,int k)
             }
         }
     }
-}
+}k
 
 int main()
 {

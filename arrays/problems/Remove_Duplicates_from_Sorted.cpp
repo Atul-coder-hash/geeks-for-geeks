@@ -53,7 +53,7 @@ int main()
 
 }
 
-//optinal approach for interview
+//optimal approach for interview
 
 #include<bits/stdc++.h>
 using namespace std;
