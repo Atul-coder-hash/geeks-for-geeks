@@ -18,6 +18,8 @@ int maxProfit(vector<int> prices)
             i++;
             
         }
+        
+        if(i == n-1) break;  // ✅ Fix
         lmin = prices[i];
         
          // Local Maxima
